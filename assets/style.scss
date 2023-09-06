@@ -1,6 +1,6 @@
 @font-face {
-  font-family: cooper lite;
-  src: url(./font/cooperm.ttf);
+  font-family: cooper;
+  // src: url(./font/cooperm.ttf);
   src: url(./font/Cooper.ttf);
 
 }
@@ -10,7 +10,6 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    overflow-x: hidden;
     scroll-behavior: none;
     font-family: 'Fraunces', serif;
     ::-webkit-scrollbar{
@@ -396,6 +395,69 @@ h1,h2, h3{
         }
 }
 
+// Page 4 --------------------------------------------------------------------------------
+#page4{
+  height: 500px;
+  width: 100%;
+  .swiper{
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        @include flexc; 
+        height: auto; 
+        position: relative;
+        z-index: 99;
+        img{
+          display: block;
+          min-width: 80px;
+          height: 80px;
+          object-fit: cover;
+          object-position: center;
+         }
+        h2{
+          max-height: auto;
+          font-family: 'cooper';
+          font-size: 2.5rem;
+          width: 80%;
+          padding: 2%;
+        }
+        h5{
+          position: relative;
+          max-height: auto;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          margin: 10px 0;
+          &::before{
+            content: " ";
+            position: absolute;
+            left: -15%;
+            top: 4px;
+            overflow: visible;
+            z-index: 9;
+            height: 10px;
+            width: 10px;
+            background-color: springgreen;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+                    }
+        }
+        p{
+          color: rgb(116, 114, 114);
+        }
+
+                    }
+         }
+}
+
+
+// Footer --------------------------------------------------------------------------------
+
 .footer{ 
     position: relative;
     padding: 5%;
@@ -513,6 +575,14 @@ h1,h2, h3{
         img{
           height: auto;
         }
+        h3{
+          font-size: 1rem;
+        }
+        button{
+          p{
+            font-size: 1rem;
+          }
+        }
       }
     }
     #pgleft #aa, #bb , #cc{
@@ -523,7 +593,29 @@ h1,h2, h3{
       display: block;
     }
    }
+   #page4{
+    .swiper{
+      .swiper-slide{
+        margin-top: 10px;
+        margin: 10px 0;
 
+        h2{
+          margin-top: 10px;
+          font-size: 1.4rem;
+          width: 80%;
+        }
+        h5{
+          font-weight: 100;
+        }
+        img{
+          height: 56px;
+          width: auto;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+   }
 
   .footer {
     position: relative;
