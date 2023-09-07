@@ -1,5 +1,5 @@
 # Awarded Digital Agency  Landing Page Clone
-![Thumbnail for digital agency clone landing page](/assets/img/thumbnail.JPG)
+![Thumbnail for digital agency clone landing page](assets/img/thumnail.JPG)
 
 ## Live Demo
 
