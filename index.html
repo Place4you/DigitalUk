@@ -11,39 +11,27 @@
    <title>Digital Uk</title>
 </head>
 <body>
-<!-- Nav ----------------------------------------------------------->
-<!-- <div id="nav">
-    <div id="logo">
-        <img src="assets/img/logo.JPG">
-    </div>
-    <div id="nav-menu">
-        <a>Services</a>
-        <a>Work</a>
-        <a>About</a>
-        <a>Culture</a>
-        <a>Careers</a>
-        <button class="contact-button">
-            <p>Contact Us</p><img src="/assets/img/long arrow.svg">
-          </button>
-     </div>
-</div> -->
-          
+       
 <section class="top-nav">
   <div id="logo">
-    <img src="assets/img/logo.JPG">
+    <img src="assets/img/thisisdigital.svg">
   </div>
   <input id="menu-toggle" type="checkbox" />
   <label class='menu-button-container' for="menu-toggle">
   <div class='menu-button'></div>
 </label>
   <ul class="menu">
-    <li>Home</li>
-    <li>About</li>
-    <li>Services</li>
-    <li>Testimonials</li>
-    <button class="contact-button">
-      <p>Contact Us</p><img src="/assets/img/long arrow.svg">
-    </button>
+    <li><a href="#
+      ">Home</a></li>
+    <li><a href="#page2">About</a></li>
+    <li><a href="#page3">Services</a></li>
+    <li><a href="#page4">Testimonials</a></li>
+    <li><a href="#page5">
+      <button class="contact-button">
+        <p>Contact Us</p><img src="/assets/img/long arrow.svg">
+      </button>
+    </a>
+  </li>
   </ul>
 </section>
 <!-- page 1 ----------------------------------------------------------->
@@ -66,8 +54,8 @@
     <h3>A Digital Performance Solutions Agency in Manchester</h3>
     <h1>We combine network agency expertise, with a highly collaborative relationship. We’re a little <span id="diff">different</span>, This is Digital.</h1>
     <h3>About
-        <button class="contact-button">
-        <img src="assets/img/long arrow.svg">
+        <button class="contact-button" style="background-color: transparent;">
+        <img src="assets/img/whitearrow.svg">
       </button>
     </h3>
  </div>
@@ -135,11 +123,65 @@
 
       </div>
 </div>
+
+  <!-- patners ----------------------------------------------------------->
+
+<div id="patner">
+  <h1>Since 2018, we’ve partnered with some great brands.</h1>
+  <div id="brands">
+    <img src="/assets/img/AG.webp" alt="" style="backdrop-filter: brightness(0.5);">
+    <img src="/assets/img/cadogan-clinic.webp" alt="">
+    <img src="/assets/img/go-shorty.webp" alt="">
+    <img src="/assets/img/ofs-darker.webp" alt="">
+    <img src="/assets/img/royal-mint-larger.webp" alt="">
+    <img src="/assets/img/ot_logo.png" alt="">
+    <img src="/assets/img/yugo.webp" alt="">
+    <img src="/assets/img/thisisdigital.svg" alt="">
+  </div>
+</div>
+
+  <!-- Blog Posts ----------------------------------------------------------->
+<div id="blogs">
+  <div id="post1" class="blog">
+    <img src="/assets/img/AG.webp">
+    <h2>Golf 86% SEO Visibility Increase for Europe's Largest Golf Retailer</h2>
+    <h3>View Case Study
+      <button class="blog-button contact-button">
+      <img src="assets/img/whitearrow.svg">
+    </button>
+  </div>
+
+  <div id="post2" class="blog">
+    <img src="/assets/img/Ryman.webp" alt="">
+    <h2>271% Visibility Increase for Stationery Brand</h2>
+    <h3>View Case Study
+      <button class="blog-button contact-button">
+      <img src="assets/img/whitearrow.svg">
+    </button>
+  </h3>
+  </div>
+
+</div>
+  <!-- page 5 ----------------------------------------------------------->
+
+<div id="page5">
+  <div id="backimg">
+    <h2>Call Demie on +44(0)161 509 0777 or email demie@thisisdigital.co.uk to discuss how we can help you.</h2>
+    <div id="new">
+      <img src="/assets/img/pfp.jpg" width="60px" height="60px">
+      <h3>Sound good?</h3>
+      <button class="contact-button">
+          <p>Request a Callback</p><img src="/assets/img/long arrow.svg">
+        </button>
+  </div>
+  </div>
+</div>
+
  <footer class="footer">
     <div id="first">
       <h1> Become our partner today</h1>
       <h3 id="small">Let's Talk
-        <button class="contact-button">
+        <button onclick="window.location.href='tel:01615090777'" class="contact-button">
         <img src="/assets/img/long arrow.svg">
       </button>
     </h3>
@@ -187,7 +229,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
- 
+
  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
  <script src="assets/script.js"></script>  
 </body>
