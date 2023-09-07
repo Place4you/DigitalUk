@@ -15,11 +15,13 @@
     box-sizing: border-box;
     scroll-behavior: none;
     font-family: 'Fraunces', serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+
     ::-webkit-scrollbar{
         display: none;
     }
-    scroll-behavior: smooth;
-    scroll-padding-top: 15px;
+
   }
   
  
@@ -499,6 +501,7 @@ h1,h2, h3{
     padding-top: 30px;
     &:hover{
       cursor: pointer;
+      background-image: contain;
       .contact-button{
         &::before{
           width: 100%;
@@ -541,15 +544,16 @@ h1,h2, h3{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 100%), url("/assets/img/Golf.webp");
     background-position: center;
     background-size: cover;
-  }  
+}  
+
   #post2{
     width: 650px;
     height: 500px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 100%), url("/assets/img/work-thumbnail-03.webp");
     background-position: center;
     background-size: cover;
-
-  }
+    
+}
 }
 
 // Page 5 --------------------------------------------------------------------------------
@@ -615,8 +619,9 @@ h1,h2, h3{
     color: white;
     background-color: black;
     height: 400px;
+    padding-top: 130px;
     display: grid;
-    align-items: flex-end;
+    align-items: flex-start;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;

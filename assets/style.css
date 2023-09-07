@@ -14,7 +14,7 @@
   scroll-behavior: none;
   font-family: "Fraunces", serif;
   scroll-behavior: smooth;
-  scroll-padding-top: 15px;
+  scroll-padding-top: 200px;
 }
 * ::-webkit-scrollbar {
   display: none;
@@ -417,6 +417,7 @@ h1, h2, h3 {
 }
 #blogs .blog:hover {
   cursor: pointer;
+  background-image: contain;
 }
 #blogs .blog:hover .contact-button::before {
   width: 100%;
@@ -526,8 +527,9 @@ h1, h2, h3 {
   color: white;
   background-color: black;
   height: 400px;
+  padding-top: 130px;
   display: grid;
-  align-items: flex-end;
+  align-items: flex-start;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
