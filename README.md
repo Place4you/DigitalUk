@@ -38,16 +38,17 @@ To view the digital agency clone landing page, follow these steps:
 
 The project is organized as follows:
 
-digital-agency-landing-page/
-|-- index.html
-|-- css/
-|   |-- styles.css
-|-- images/
-|   |-- agency.jpg
-|-- js/
-|   |-- script.js
-|-- README.md
-
+digital-agency-landing-page/  
+|-- index.html  
+|-- assets  
+|  |-- css/    
+|     |-- styles.css  
+|  |-- img/  
+|     |-- agency.jpg  
+|  |-- js/  
+|     |-- script.js  
+|-- README.md  
+  
 - **index.html**: The HTML file contains the structure and content of the landing page.
 - **css/styles.css**: The SCSS file includes all the styles necessary to create an attractive layout and design.
 - **js/script.js**: The JavaScript file contains the code for adding interactivity to the page.
