@@ -2,7 +2,10 @@
   font-family: cooper;
   // src: url(./font/cooperm.ttf);
   src: url(./font/Cooper.ttf);
-
+}
+@font-face {
+  font-family: Gilroy;
+  src: url(./font//Gilroy-Light.otf);
 }
 
 * {
@@ -15,6 +18,8 @@
     ::-webkit-scrollbar{
         display: none;
     }
+    scroll-behavior: smooth;
+    scroll-padding-top: 15px;
   }
   
  
@@ -93,42 +98,41 @@ h1,h2, h3{
     width: 100%;
 }
 // Navbar ---------------------------------------------------
-#nav{
-    position: fixed;
-    height: 7rem;
-    width: 100%;
-    @include flexr;
-    justify-content: flex-end;
-    padding-right: 10%;
-    z-index: 999;
-    background-color: white;
-    #logo{
-        position: fixed;
-        left: 0;
-        max-width: 30%;
-        padding: 1.3rem 0 0 5rem;
-        img{
-            width: 170px;
-            height: 50px;
-        }
-    }
-    #nav-menu{
-        position: relative;
-        max-width: 70%;
-        @include flexr;
-        gap: 40px;
+// #nav{
+//     position: fixed;
+//     height: 7rem;
+//     width: 100%;
+//     @include flexr;
+//     justify-content: flex-end;
+//     padding-right: 10%;
+//     z-index: 999;
+//     background-color: white;
+//     #logo{
+//         position: fixed;
+//         left: 0;
+//         max-width: 30%;
+//         padding: 1.3rem 0 0 5rem;
+//         img{
+//             width: 170px;
+//             height: 50px;
+//         }
+//     }
+//     #nav-menu{
+//         position: relative;
+//         max-width: 70%;
+//         @include flexr;
+//         gap: 40px;
      
-    }
-}
+//     }
+// }
 .contact-button {
     position: relative;
-    background-color: white;
     padding: 10px 2rem;
     border-radius: 20px;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid;
+    border: 2px solid white;
     cursor: pointer;
     overflow: hidden;
     p{
@@ -136,7 +140,7 @@ h1,h2, h3{
     }
     img {
       margin-left: 10px;
-      z-index: 5;
+      z-index: 15;
     }
   
     &::before {
@@ -454,17 +458,162 @@ h1,h2, h3{
                     }
          }
 }
+// Patners --------------------------------------------------------------------------------
+#patner{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  h1{
+    font-family: cooper;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 5% 10%;
+  }
+  #brands{
+    @include flexr;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    width: 70%;
+    margin: auto;
+    row-gap: 8rem;
+    column-gap: 150px; 
+    img{
+      max-width:150px;
+      height: auto;
+    }
+  }
+}
 
+// Blog posts--------------------------------------------------------------------------------
+#blogs{
+  height: 500px;
+  width: 100%;
+  @include flexr;
+  column-gap: 2em;
+  .blog{
+    border-radius: 10px;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 30px;
+    &:hover{
+      cursor: pointer;
+      .contact-button{
+        &::before{
+          width: 100%;
+        }
+      } 
+    }
+    img{
+      height: 60px;
+      width: auto;
+    }
+    h2{
+      padding: 25% 0 4% 0;
+      color: white;
+      font-size: 1.8rem;
+      font-family: cooper;
+    }
+    h3{
+      @include flexr;
+      justify-content: flex-start;
+      color: white;
+      font-family: Gilroy;
+      .blog-button{
+        width: auto;
+        padding: 5px 10px;
+        border-radius: 15px;
+        background: transparent;
+        border-color: white;
+
+        img{
+          height: 20px;
+          width: auto;
+        }
+      }
+    }
+
+  }
+  #post1{
+    width: 650px;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 100%), url("/assets/img/Golf.webp");
+    background-position: center;
+    background-size: cover;
+  }  
+  #post2{
+    width: 650px;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 100%), url("/assets/img/work-thumbnail-03.webp");
+    background-position: center;
+    background-size: cover;
+
+  }
+}
+
+// Page 5 --------------------------------------------------------------------------------
+
+#page5{
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow: visible;
+  #backimg{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    overflow: visible;
+    z-index: 99;
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%), url("/assets/img/This-is-digital-LOW-RES-23.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    h2{
+      font-family: cooper;
+      font-size: 2.1rem;
+      text-align: center;
+      color: white;
+      padding: 5% 8%;
+    }
+    #new{
+      height: auto;
+      @include flexr;
+      img{
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+      h3{
+        font-family: Gilroy;
+        font-weight: bolder;
+        font-size: 2.1rem;
+        color: white;
+        }
+      button{
+        p{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
 
 // Footer --------------------------------------------------------------------------------
 
 .footer{ 
     position: relative;
     padding: 5%;
+    z-index: 98;
     color: white;
     background-color: black;
-    height: 60vh;
+    height: 400px;
     display: grid;
+    align-items: flex-end;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
@@ -488,7 +637,7 @@ h1,h2, h3{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding-bottom: 5%;
         &:hover{
-            text-decoration: underline;
+            text-decoration: underline green;
             cursor: pointer;
         }
       }
@@ -519,20 +668,25 @@ h1,h2, h3{
     *{
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
 
-      
-    
    #page1{
     margin: 0;
     margin-top: 140px;
     padding: 0;
       flex-direction: column;
         h1{
+          font-family: cooper;
+          width: 100%;
+          font-size: 3rem;
           position: absolute;
           top: 0;
-          color: springgreen;
+          color: black;
           -webkit-text-stroke: 2px difference;
+        }
+        h3{
+          font-size: 2rem;
         }
         #a{
           display: none;
@@ -562,6 +716,7 @@ h1,h2, h3{
       height: auto;
     }
    }
+   
    #page3{
     flex-direction: column;
     height: auto;
@@ -593,7 +748,9 @@ h1,h2, h3{
       display: block;
     }
    }
+
    #page4{
+    overflow: hidden;
     .swiper{
       .swiper-slide{
         margin-top: 10px;
@@ -615,6 +772,63 @@ h1,h2, h3{
         }
       }
     }
+   }
+
+   #blogs{
+    flex-direction: column;
+    row-gap: 50px;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    .blog{
+      height: auto;
+      h2{
+        padding: 20% 2%;
+      }
+      h3{
+        padding: 2%;
+
+      }
+     }
+      #post1{
+        width: auto;
+      }
+      #post2{
+        width: auto;
+      }
+    
+   }
+
+   #page5{
+    #backimg{
+      background: black;
+      @include flexc;
+      row-gap: 30px;
+      margin: auto;
+      left: 10%;
+      h2{
+        font-size: 1rem;
+      }
+      #new{
+        img{
+          height: 40px;
+          width: auto;
+        }
+        h3{
+          font-size: 1rem;
+          button{
+            width: 100px;
+            img{
+              height: 20px;
+              width: auto;
+            }
+            p{
+              font-size: 1rem;
+            }
+          }
+        }
+          }
+            }
    }
 
   .footer {
@@ -641,6 +855,7 @@ h1,h2, h3{
   
 .top-nav {
     top: 0;
+    height: 4rem;
     position: sticky;
     display: flex;
     flex-direction: row;
@@ -649,8 +864,11 @@ h1,h2, h3{
     background: white;
     z-index: 999;
     color: black;
-    height: 60px;
+    height: 70px;
     padding: 1em;
+    &:hover{
+      cursor: pointer;
+    }
   }
   #logo{
     position: sticky;
@@ -665,8 +883,7 @@ h1,h2, h3{
 }
   
   .menu {
-    display: flex;
-    flex-direction: row;
+    @include flexr;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -675,6 +892,12 @@ h1,h2, h3{
   .menu > li {
     margin: 0 1rem;
     overflow: hidden;
+    font-weight: bold;
+    font-family: Gilroy;
+    a{
+      text-decoration: none;
+      color: black;
+    }
   }
   
   .menu-button-container {
