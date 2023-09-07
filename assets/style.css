@@ -474,6 +474,7 @@ h1, h2, h3 {
   overflow: visible;
 }
 #page5 #backimg {
+  border-radius: 10px;
   position: absolute;
   top: 100px;
   left: 200px;
@@ -628,6 +629,7 @@ h1, h2, h3 {
     height: auto;
   }
   #page3 {
+    position: relative;
     flex-direction: column;
     height: auto;
   }
@@ -655,6 +657,7 @@ h1, h2, h3 {
     display: block;
   }
   #page4 {
+    position: relative;
     overflow: hidden;
   }
   #page4 .swiper .swiper-slide {
@@ -677,7 +680,30 @@ h1, h2, h3 {
     -o-object-position: center;
        object-position: center;
   }
+  #patner h1 {
+    font-size: 2rem;
+    display: inline-block;
+  }
+  #patner #brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    height: 300px;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    row-gap: 1.8rem;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+  #patner #brands img {
+    max-width: 130px;
+    height: auto;
+  }
   #blogs {
+    position: relative;
     flex-direction: column;
     row-gap: 50px;
     height: auto;
@@ -699,37 +725,42 @@ h1, h2, h3 {
   #blogs #post2 {
     width: auto;
   }
+  #page5 {
+    position: relative;
+  }
   #page5 #backimg {
+    border: 3px solid white;
+    width: 90%;
     background: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 30px;
-    margin: auto;
-    left: 10%;
+    left: 5%;
   }
   #page5 #backimg h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   #page5 #backimg #new img {
     height: 40px;
-    width: auto;
+    width: 50px;
   }
   #page5 #backimg #new h3 {
     font-size: 1rem;
   }
-  #page5 #backimg #new h3 button {
+  #page5 #backimg #new h3 button .contact-button {
     width: 100px;
   }
-  #page5 #backimg #new h3 button img {
+  #page5 #backimg #new h3 button .contact-button img {
     height: 20px;
     width: auto;
   }
-  #page5 #backimg #new h3 button p {
+  #page5 #backimg #new h3 button .contact-button p {
     font-size: 1rem;
   }
   .footer {
+    padding-top: 3rem;
     position: relative;
     height: auto;
     grid-template-columns: 1fr;
@@ -911,7 +942,8 @@ h1, h2, h3 {
   }
   #menu-toggle:checked ~ .menu li {
     border: 1px solid #333;
-    height: 2.5em;
+    height: auto;
+    color: white;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -923,6 +955,9 @@ h1, h2, h3 {
     width: 100%;
     color: white;
     background-color: #222;
+  }
+  .menu > li a {
+    color: white;
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
